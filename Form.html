@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/python_icon.png">
+    <title>Form web page</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Oswald", sans-serif;
+        }
+
+        body {
+            background-color: rgb(201, 142, 34);
+        }
+
+        h2 {
+            font-size: 40px;
+            text-align: center;
+            margin-top: 15px;
+            font-weight: 650;
+            font-style: normal;
+        }
+        
+        input {
+            padding-right: 20px;
+        }
+        
+        h5 {
+            margin-top: -70px;
+            font-size: 19px;
+            color: #534f4f;
+            font-weight: 500;
+        }
+        
+        a {
+            color: rgb(87, 110, 185);
+            text-decoration: none;
+        }
+
+        .form_input {
+            width: 470px;
+            height: 600px;
+            margin: auto;
+            margin-top: 90px;
+            display: grid;
+            place-items: center; /* จัดกลางทั้งแนวนอนและแนวตั้ง */
+            border-radius: 19px;
+            background-color: #f8f8f8; /* สีพื้นหลัง */
+            box-shadow: 0 4px 8px rgba(0, 1, 2, 0.5); /* เงา */
+        }
+        
+        .form_input .label_Username {
+            font-size: 20px;
+            margin-right: 305px; /* ระยะห่างระหว่าง label และ input */
+            margin-top: 20px;
+        }
+
+        .form_input .label_password {
+            font-size: 20px;
+            margin-right: 305px; /* ระยะห่างระหว่าง label และ input */
+            margin-top: -150px;
+        }
+
+        .username {
+            width: 380px;
+            height: 50px;
+            margin-right: 2px; /* ระยะห่างระหว่าง label และ input */
+            margin-top: -100px;
+            font-size: 20px;
+            border-radius: 5px;
+            background-color: #f8f8f8; /* สีพื้นหลัง */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงา */
+            border: 1px solid rgba(0, 0, 0, 0.2);
+        }
+        .password {
+            width: 380px;
+            height: 50px;
+            margin-top: -220px;
+            border-radius: 5px;
+            font-size: 20px;
+            background-color: #f8f8f8; /* สีพื้นหลัง */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงา */
+            border: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        .Link_Editpassword{
+            margin-top: -270px;
+            margin-right: -250px;
+            font-size: 20px;
+            color: rgb(34, 98, 172);
+        }
+
+        .Button_input {
+            height: 65px;
+            width: 315px;
+            margin-top: -180px;
+            font-size: 30px;
+            color: #fff;
+            border-radius: 9px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เงา */
+            border: 1px solid rgba(0, 0, 0, 0.4);
+            background-color: rgb(60, 79, 190);
+        }
+
+    </style>
+
+</head>
+<body>
+    <form action="#" class="form_input">
+        <h2>Log In</h2>
+        <label for="Username" class="label_Username">Username:</label> <br>
+        <input type="text" class="username" name="Username" placeholder="Enter you username: "><br>
+        
+        <label for="password" class="label_password">Password:</label><br>
+        <input type="text" class="password" name="last name" placeholder="Enter you password: "><br>
+        
+        <a href="Class.html" class="Link_Editpassword">Forgot password?</a>
+        <button type="submit" class="Button_input">Login</button>
+        
+        <h5>Don't have an account?<a href="#"> Sign up</a></h5>
+    </form>
+</body>
+</html>
